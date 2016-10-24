@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Booking
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+  <ion-item>
+    <ion-label color="goanywhere"><ion-icon name="subway"></ion-icon>  TukTuk ID:</ion-label>
+    <ion-input placeholder="Input" ></ion-input>
+  </ion-item>
+
+  
+  
+  <ion-item>
+  <ion-label color="goanywhere"><ion-icon name="contacts"></ion-icon>  Amount Of People:</ion-label>
+   <ion-select  [(ngModel)]="toppings" >
+   
+    <ion-option value="1" selected="true">1 person</ion-option>
+    <ion-option value="2">2 people</ion-option>
+    <ion-option value="3">3 people</ion-option>
+    <ion-option value="4">4 people</ion-option>
+  </ion-select>
+  </ion-item>
+  
+ 
+    <button ion-item ><ion-label color="goanywhere"><ion-icon name="pin"></ion-icon>   Current Location</ion-label></button>
+    <button ion-item ><ion-label color="goanywhere"><ion-icon name="compass"></ion-icon> Target Location</ion-label></button>
+   <ion-item>
+    <ion-label color="goanywhere"><ion-icon name="pricetag"></ion-icon>  Tips(*optional):</ion-label>
+    <ion-input placeholder="Input"></ion-input>
+  </ion-item>
+</ion-list>
+  	<button ion-button full color="goanywhere" (click)="showConfirm()">Book</button>
+</ion-content>
